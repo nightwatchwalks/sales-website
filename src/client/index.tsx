@@ -1,6 +1,6 @@
 import { config } from "@/config";
 import { createPublicClient, http } from "viem";
-import { goerli, mainnet } from "viem/chains";
+import { goerli, mainnet, sepolia } from "viem/chains";
 
 export const anvilLocalhost = {
   id: 31337,
@@ -26,6 +26,8 @@ export function getChain() {
     ? anvilLocalhost
     : config.chainId === 5
     ? goerli
+    : config.chainId === 11155111
+    ? sepolia
     : mainnet;
 }
 

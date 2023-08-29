@@ -9,11 +9,11 @@ export const config = {
   apis: {
     walletConnect: "3589d86efd1ff44bc46d3659de3e0c90",
   },
-  metadataServerRoot: "https://q558ifducp.us-east-1.awsapprunner.com",
+  metadataServerRoot: "https://metadata-server.impossibletrios.art",
   generatedGifsRoot:
     "https://night-watch-walks.s3.us-east-1.amazonaws.com/generated-gifs",
-  rpcUrl: "https://goerli.infura.io/v3/a3d34c108b58414799f3c3e49e2f530d",
+  rpcUrl: "https://sepolia.infura.io/v3/b3bb49d22cc24fd08a1fe28db11768a1",
   pricePerToken: 0.03,
-  chainId: 5,
-  minLookupBlock: 9572931,
+  chainId: 11155111,
+  minLookupBlock: 4184266,
 };
