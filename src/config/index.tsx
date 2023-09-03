@@ -16,4 +16,6 @@ export const config = {
   pricePerToken: 0.03,
   chainId: 1,
   minLookupBlock: 18024804,
+  assetsUrl:
+    "https://night-watch-walks.s3.amazonaws.com/web-assets/sale-website",
 };

@@ -28,7 +28,7 @@ export default function NWCard({ token, ...props }) {
         src={tokenImage}
         alt={"Night Watch"}
         onClick={() => setSelectedToken(token)}
-        fallbackSrc={"/images/loading.gif"}
+        fallbackSrc={config.assetsUrl + "/images/loading.gif"}
       />
     </Box>
   );

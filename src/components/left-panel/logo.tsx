@@ -1,3 +1,4 @@
+import { config } from "@/config";
 import { Flex, Image, useMediaQuery } from "@chakra-ui/react";
 
 export default function Logo({ ...props }) {
@@ -7,7 +8,7 @@ export default function Logo({ ...props }) {
       <Image
         maxW={largerThan370 ? "370px" : "100%"}
         px={[5, 5, 5, 0]}
-        src="/images/logo.webp"
+        src={config.assetsUrl + "/images/logo.webp"}
         alt="Night Watch"
       />
     </Flex>

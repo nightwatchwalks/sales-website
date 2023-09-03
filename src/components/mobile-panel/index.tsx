@@ -58,9 +58,9 @@ export default function MobilePanel({ ...props }) {
               src={
                 selectedToken
                   ? config.metadataServerRoot + "/getImage/" + selectedToken.id
-                  : "/images/loading.gif"
+                  : config.assetsUrl + "/images/loading.gif"
               }
-              fallbackSrc={"/images/loading.gif"}
+              fallbackSrc={config.assetsUrl + "/images/loading.gif"}
               alt={"Token Image"}
             />
             <Flex>

@@ -24,11 +24,11 @@ export default function RightPanel({ ...props }) {
       backgroundRepeat={"no-repeat"}
       style={{
         backgroundImage: !purchaseCompleted
-          ? "url(/images/crew-bg.webp)"
+          ? "url(" + config.assetsUrl + "/images/crew-bg.webp)"
           : "url(" +
             (selectedToken
               ? config.metadataServerRoot + "/getImage/" + selectedToken.id
-              : "/images/empty.webp") +
+              : config.assetsUrl + "/images/empty.webp") +
             ")",
       }}
       h={"100vh"}
