@@ -6,6 +6,7 @@ import StatsBox from "./stats-box";
 import dynamic from "next/dynamic";
 import Divider from "./divider";
 import BottomInfoPanel from "./bottom-info-panel";
+import { config } from "@/config";
 
 const ArrowPanel = dynamic(() => import("./arrow-panel"), {
   ssr: false,
@@ -18,7 +19,7 @@ export default function LeftPanel({ ...props }) {
       <Divider px={10} />
       <PurchaseCompletedLeftPanel />
       <ArrowPanel />
-      <StatsBox />
+      {config.isSaleOpen && <StatsBox />}
       <Divider w={"full"} />
       <BottomInfoPanel />
       <Divider w={"full"} />

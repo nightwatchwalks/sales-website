@@ -13,6 +13,8 @@ import { usePreparePurchase } from "@/hooks/usePreparePurchase";
 
 import ClaimButton from "./claim-button";
 import { useUnclaimedTokens } from "@/hooks/useUnclaimedTokens";
+import { config } from "@/config";
+import SaleNotOpen from "./sale-not-open";
 
 const BuySelector = dynamic(() => import("./buy-selector"), {
   ssr: false,
@@ -101,7 +103,9 @@ export default function ArrowPanel({ ...props }) {
         </>
       ) : (
         <>
-          {isSoldOut ? (
+          {!config.isSaleOpen ? (
+            <SaleNotOpen />
+          ) : isSoldOut ? (
             <SoldOut />
           ) : (
             <>

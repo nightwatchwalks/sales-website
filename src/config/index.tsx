@@ -18,4 +18,5 @@ export const config = {
   minLookupBlock: 18024804,
   assetsUrl:
     "https://night-watch-walks.s3.amazonaws.com/web-assets/sale-website",
+  isSaleOpen: false,
 };
